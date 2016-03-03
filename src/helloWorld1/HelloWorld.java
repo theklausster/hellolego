@@ -19,7 +19,6 @@ public class HelloWorld implements ButtonListener {
     
     
 	public static void main(String[] args) throws Exception {
-				
 		initialize();
 		while(true)
 		{
@@ -32,7 +31,6 @@ public class HelloWorld implements ButtonListener {
 			
 		}
 	
-	
 	public static void initialize()
 	{
 		HelloWorld listener = new HelloWorld();
@@ -43,6 +41,7 @@ public class HelloWorld implements ButtonListener {
 		Motor.C.setSpeed(speed2);
 		touchSensor = new TouchSensor(SensorPort.S1);
 		ultraSensor = new UltrasonicSensor(SensorPort.S4);
+		
 	}
 	
 	public static void exercise2() throws InterruptedException
